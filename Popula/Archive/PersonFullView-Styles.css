@@ -1,0 +1,41 @@
+#personFullView{
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    width:450px;
+    height: 400px;
+
+}
+
+#personInfoDiv{
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    width:450px;
+    height: 250px;
+    overflow-y:auto;
+}
+
+.personFullViewInfo{
+}
+
+.fullViewRightText{
+    font-family: WireOne;
+    font-size: 34px;
+}
+
+.fullViewLeftText{
+    font-family: Abel;
+    font-size: 20px;
+    text-indent: 10px;
+}
+
+@font-face {
+    font-family: WireOne;
+    src: url(Fonts/WireOne.ttf);
+}
+
+@font-face {
+    font-family: Abel;
+    src: url(Fonts/Abel.ttf);
+}

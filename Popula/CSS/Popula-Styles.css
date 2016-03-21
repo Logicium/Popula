@@ -1,0 +1,410 @@
+#container {
+}
+
+#bannerDiv {
+}
+
+#mainBanner {
+    /*background: linear-gradient(90deg, #F1F2B5 10%, #135058 90%); /* W3C */
+    font-family: WireOne;
+    font-size: 38px;
+    text-align: center;
+    width: 70%;
+}
+
+#popula {
+    font-family: WireOne;
+    text-align: center;
+    align-items: center;
+}
+
+.btn {
+    box-sizing: border-box;
+    box-shadow: none;
+    border: none;
+    font: 2em/1 sans-serif;
+    padding: 20px 80px;
+    letter-spacing: 5px;
+    color: white;
+    border: solid 4px transparent;
+    border-image: linear-gradient(45deg, pink, skyblue);
+    border-image-slice: 1;
+    background: linear-gradient(45deg, pink, skyblue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+#appTitle {
+    font-family: WireOne;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 25px;
+    text-align: center;
+    width: 70%;
+}
+
+#columnHeaderDiv {
+    text-align: center;
+}
+
+#peopleHeader {
+    display: table-cell;
+}
+
+#peopleLabel {
+    border-radius: 25px;
+    text-align: center;
+    font-family: Julius;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 150px;
+}
+
+#searchHeader {
+    display: table-cell;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 50px;
+    width: 470px;
+}
+
+#searchResultsView{
+}
+
+#placesHeader {
+    display: table-cell;
+}
+
+#placeImageView{
+    text-align: center;
+}
+
+#placeImageContainer{
+    overflow-y:auto;
+}
+
+#placesLabel {
+    border-radius: 25px;
+    text-align: center;
+    font-family: Julius;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 150px;
+}
+
+#mainColumnDiv {
+    text-align: center;
+    max-height: 425px;
+}
+
+#peopleColumn {
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    display: table-cell;
+    height: 400px;
+    margin-right: 20px;
+    width: 150px;
+    max-height: 400px;
+}
+
+#imageContainer {
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+#mainColumn {
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    display: table-cell;
+    height: 400px;
+    max-height: 400px;
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 450px;
+    overflow: auto;
+}
+
+#buttonArea {
+    height: 100px;
+}
+
+#topText {
+    font-family: Abel;
+    font-size: 22px;
+}
+
+#bottomText {
+    font-family: Sketch;
+    font-size: 26px;
+}
+
+#placesColumn {
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    display: table-cell;
+    height: 400px;
+    margin-right: 20px;
+    width: 150px;
+    max-height: 400px;
+    overflow: auto;
+}
+
+#placesImageDiv{
+    text-align: center;
+}
+
+#placesImageContainer {
+    height: 400px;
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+#placeTopText {
+    font-family: Abel;
+    font-size: 22px;
+}
+
+#placeBottomText {
+    font-family: Sketch;
+    font-size: 26px;
+}
+
+.roundImage {
+    border-radius: 64px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000000;
+}
+
+#peopleFullView {
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    width: 450px;
+    height: 400px;
+}
+
+#placesFullView {
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    width: 450px;
+    height: 400px;
+}
+
+#placesInfoDiv {
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    width: 450px;
+    height: 325px;
+    overflow-y: auto;
+}
+
+#personInfoDiv {
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    width: 450px;
+    height: 325px;
+    overflow-y: auto;
+}
+
+#personResults{
+    text-align: center;
+    font-family: WireOne;
+    font-size: 30px;
+    overflow-y:auto;
+    height:400px;
+    max-height:400px;
+    display: table-cell;
+    width:200px;
+}
+
+#personResultsContainer{
+    height: 400px;
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+#placesResultsContainer{
+    height: 400px;
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+#placesResults{
+    font-family: WireOne;
+    font-size: 30px;
+    text-align: center;
+    overflow-y:auto;
+    height:400px;
+    max-height:400px;
+    width:200px;
+    display: table-cell;
+}
+
+
+.personFullViewInfo {
+}
+
+.fullViewRightText {
+    font-family: WireOne;
+    font-size: 34px;
+}
+
+.fullViewLeftText {
+    font-family: Abel;
+    font-size: 20px;
+    text-indent: 10px;
+}
+
+.place {
+    height: 80px;
+    width: 80px;
+    border-radius: 64px;
+    color: white;
+    text-align: center;
+    font-family: Julius;
+    font-size: 30px;
+    vertical-align: middle;
+    line-height: 80px;
+}
+
+#dialog{
+    color:black;
+    text-align: center;
+    font-family: Gruppo;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.69);
+    border-radius: 12px;
+}
+
+.ui-widget {
+    font-family: Verdana,Arial,sans-serif;
+    font-size: .8em;
+}
+
+.ui-widget-content {
+    background: #F9F9F9;
+    border: 1px solid #2d2d2d;
+    color: #222222;
+}
+
+.ui-dialog {
+    left: 0;
+    outline: 0 none;
+    padding: 0 !important;
+    position: absolute;
+    top: 0;
+}
+
+.ui-dialog .ui-dialog-content {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    overflow: auto;
+    position: relative;
+    padding: 0 !important;
+}
+
+.ui-widget-header {
+    background: #34dea7;
+    border: 0;
+    color: #fff;
+    font-weight: normal;
+    font-family: Julius;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+    padding: 0.1em .5em;
+    position: relative;
+    font-size: 1em;
+}
+
+input {
+    font-family: Syncopate;
+    font-size: 14px;
+    color: #393333;
+    padding: 10px 20px;
+    background: -webkit-gradient(
+            linear, left top, left bottom,
+            from(#ffffff),
+            to(#ffffff));
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    border-image: linear-gradient(45deg, pink, skyblue);
+    border-image-slice: 1;
+    -webkit-box-shadow: 0px 1px 3px rgba(168, 168, 168, 0.5),
+    inset 0px 0px 0px rgba(255, 255, 255, 0);
+    box-shadow: 0px 1px 3px rgba(168, 168, 168, 0.5),
+    inset 0px 0px 0px rgba(255, 255, 255, 0);
+    text-shadow: 0px 0px 0px rgba(000, 000, 000, 1),
+    0px 0px 0px rgba(255, 255, 255, 0);
+}
+
+
+.ui-tooltip {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 2px solid #ffffff;
+}
+.ui-tooltip {
+    color: black;
+    border-radius: 20px;
+    font-family: Abel;
+    font-size:16px;
+    text-transform: uppercase;
+    box-shadow: 0 0 7px black;
+    width:120px;
+    text-align: center;
+
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+@font-face {
+    font-family: Syncopate;
+    src: url(Fonts/Syncopate-Regular.ttf);
+}
+
+@font-face {
+    font-family: Gruppo;
+    src: url(Fonts/Gruppo-Regular.ttf);
+}
+
+@font-face {
+    font-family: Sketch;
+    src: url(Fonts/HBSketchDemo.otf);
+}
+
+@font-face {
+    font-family: WireOne;
+    src: url(Fonts/WireOne.ttf);
+}
+
+@font-face {
+    font-family: Julius;
+    src: url(Fonts/Julius.ttf);
+}
+
+@font-face {
+    font-family: Abel;
+    src: url(Fonts/Abel.ttf);
+}

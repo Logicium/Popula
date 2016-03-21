@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Popula</title>
+    <link rel="icon" type="CSS" href="Images/Popula.png" sizes="16x20">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="CSS/Popula-Styles.css">
+    <link rel="stylesheet" type="text/css" href="CSS/Slideshow.css">
+    <link rel="stylesheet" type="text/css" href="CSS/demo-modified.css">
+    <link href="CSS/hover.css" rel="stylesheet" media="all">
+    <script src="JS/jquery-1.11.3.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="JS/Popula-Brain.js"></script>
+
+</head>
+<body>
+<ul class="cb-slideshow">
+    <li><span></span>
+
+        <div><h3></h3></div>
+    </li>
+    <li><span></span>
+
+        <div><h3></h3></div>
+    </li>
+    <li><span></span>
+
+        <div><h3></h3></div>
+    </li>
+    <li><span></span>
+
+        <div><h3></h3></div>
+    </li>
+    <li><span></span>
+
+        <div><h3></h3></div>
+    </li>
+    <li><span></span>
+
+        <div><h3></h3></div>
+    </li>
+</ul>
+
+
+<div id="container" class="container">
+    <div id="bannerDiv" align="center">
+        <div id="mainBanner" class="btn">
+            <p id="popula" class="btn">P O P U L A</p>
+        </div>
+        <br>
+    </div>
+    <br>
+
+
+    <div id="columnHeaderDiv" align="center">
+        <div align="center">
+            <div id="peopleHeader">
+                <img src="Images/Buttons/User%20Group-50-grey.png" class="roundImageWhite">
+
+                <div style="height:10px"></div>
+                <div id="peopleLabel">P e o p l e</div>
+            </div>
+            <div style="width: 30px; display:table-cell"></div>
+            <div id="searchHeader">
+                <form name="searchForm">
+                    <input name="searchFormValue" id="search" placeholder="Search" type="text">
+                    <input type="submit" value="Search" class="hvr-fade">
+                </form>
+            </div>
+            <div style="width:30px; display:table-cell"></div>
+            <div id="placesHeader">
+                <img src="Images/Buttons/Globe%20Earth-50-grey.png">
+
+                <div style="height:10px"></div>
+                <div id="placesLabel">P l a c e s</div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div id="mainColumnDiv">
+        <div align="center">
+            <div id="peopleColumn">
+                <div id="imageContainer"></div>
+            </div>
+            <div style="width:20px; display:table-cell"></div>
+            <div id="mainColumn">
+                <div id="peopleQuickView" data-positionOrigin="left">
+                    <div id="quickView">
+                        <div id="imageHeader" class="hvr-grow">
+                            <img src="" id="userImage" class="roundImage" title="More Info">
+                        </div>
+                        <br>
+                        <div id="textContainer">
+                            <div id="topText"></div>
+                            <br>
+                            <div id="bottomText"></div>
+                        </div>
+                        <br>
+                        <br>
+
+                        <div id="imageButtons">
+                            <div id="nameButtonDiv" style="display: table-cell;" class="hvr-float-shadow">
+                                <img src="Images/Buttons/User-50.png" id="nameButton" class="roundImage" title="Name">
+                            </div>
+                            <div style="width:20px; display:table-cell"></div>
+                            <div id="emailButtonDiv" style="display: table-cell;" class="hvr-float-shadow">
+                                <img src="Images/Buttons/Message%20Outline-50.png" id="emailButton" class="roundImage"
+                                     title="Email">
+                            </div>
+                            <div style="width:20px; display:table-cell"></div>
+                            <div id="birthdayButtonDiv" style="display: table-cell;" class="hvr-float-shadow">
+                                <img src="Images/Buttons/Birthday%20Cake-50.png" id="birthdayButton" class="roundImage"
+                                     title="Birthday">
+                            </div>
+                            <div style="width:20px; display:table-cell"></div>
+                            <div id="addressButtonDiv" style="display: table-cell;" class="hvr-float-shadow">
+                                <img src="Images/Buttons/Cottage-50.png" id="addressButton" class="roundImage"
+                                     title="Home Address">
+                            </div>
+                            <div style="width:20px; display:table-cell"></div>
+                            <div id="phoneButtonDiv" style="display: table-cell;" class="hvr-float-shadow">
+                                <img src="Images/Buttons/Cell%20Phone-50.png" id="phoneNumberButton" class="roundImage"
+                                     title="Phone Number">
+                            </div>
+                            <div style="width:20px; display:table-cell"></div>
+                            <div id="moreButtonDiv" style="display: table-cell;" class="hvr-float-shadow">
+                                <img src="Images/Buttons/Geo-fence-50%20(2).png" id="moreButton" class="roundImage"
+                                     title="Find Location Info">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="peopleFullView" data-positionOrigin="left">
+                    <div id="personImageDiv">
+                        <img src="" id="personFullViewImage" class="roundImage hvr-shrink" title="Go Back">
+                    </div>
+                    <div>
+                        <div id="personInfoDiv"></div>
+                    </div>
+                </div>
+                <div id="searchResultsView" data-positionOrigin="top">
+                    <div id="searchResultsBanner"></div>
+                    <div id="personResults">
+                        People Results:
+                        <br>
+                        <div id="personResultsContainer"></div>
+                    </div>
+                    <div id="placesResults">
+                        Places Results:
+                        <br>
+                        <div id="placesResultsContainer"></div>
+                    </div>
+                </div>
+                <div id="placesQuickView" data-positionOrigin="right">
+                    <div id="quickView2">
+                        <div id="placeImageHeader" class="roundImage hvr-grow" style="width:175px;height:175px;">
+                            <img src="" id="placeImage" class="roundImage">
+                        </div>
+                        <br>
+
+                        <div id="placeTextContainer">
+                            <div id="placeTopText"></div>
+                            <br>
+
+                            <div id="placeBottomText"></div>
+                        </div>
+                        <br>
+                        <br>
+
+                        <div id="placeImageButtons">
+                            <div id="placeNameButtonDiv" style="display: table-cell;" class="hvr-float-shadow">
+                                <img src="Images/Places-Buttons/Worldwide%20Location-50%20(1).png" id="placeNameButton"
+                                     class="roundImage" title="Country Name">
+                            </div>
+                            <div style="width:20px; display:table-cell"></div>
+                            <div id="subRegionButtonDiv" style="display: table-cell;" class="hvr-float-shadow">
+                                <img src="Images/Places-Buttons/World%20Map-50%20(1).png" id="subRegionButton"
+                                     class="roundImage" title="Sub-Region">
+                            </div>
+                            <div style="width:20px; display:table-cell"></div>
+                            <div id="populationButtonDiv" style="display: table-cell;" class="hvr-float-shadow">
+                                <img src="Images/Places-Buttons/User%20Groups.png" id="populationButton"
+                                     class="roundImage" title="Population">
+                            </div>
+                            <div style="width:20px; display:table-cell"></div>
+                            <div id="capitalButtonDiv" style="display: table-cell;" class="hvr-float-shadow">
+                                <img src="Images/Places-Buttons/US%20Capitol-50.png" id="capitalButton"
+                                     class="roundImage" title="Capital City">
+                            </div>
+                            <div style="width:20px; display:table-cell"></div>
+                            <div id="languagesButtonDiv" style="display: table-cell;" class="hvr-float-shadow">
+                                <img src="Images/Places-Buttons/Talk-50.png" id="languagesButton" class="roundImage">
+                            </div>
+                            <div style="width:20px; display:table-cell"></div>
+                            <div id="placeMoreButtonDiv" style="display: table-cell;"
+                                 class="hvr-float-shadow hvr-rotate">
+                                <img src="Images/Places-Buttons/More-50.png" id="placeMoreButton" class="roundImage">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="placesFullView" data-positionOrigin="right">
+                    <div id="placesImageDiv" class="roundImage" style="width:175px;height:175px;">
+                        <img src="" id="placesFullViewImage" class="roundImage">
+                    </div>
+                    <div>
+                        <div id="placesInfoDiv"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div style="width:20px; display:table-cell"></div>
+            <div id="placesColumn">
+                <div id="placeImageContainer" style="max-height:400px;"></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div id="dialog" title="Location not found" style="display:none">
+    The Ziptastic API is limited to US postal codes countries.
+    Stay tuned for an update!
+</div>
+
+</body>
+</html>

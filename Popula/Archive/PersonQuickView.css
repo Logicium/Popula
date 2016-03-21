@@ -1,0 +1,51 @@
+#container{
+    text-align: center;
+    background-color: rgba(141, 255, 250, 1)
+}
+
+
+#quickView{
+    text-align: center;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.7);
+    height:400px;
+    width:450px;
+}
+
+    #imageHeader{
+        height:200px;
+    }
+
+    #textArea{
+        height:100px;
+    }
+        #topText{
+            font-family: Gruppo;
+        }
+
+        #bottomText{
+            font-family: Syncopate;
+        }
+
+    #buttonArea{
+        height:100px;
+        overflow:auto;
+    }
+
+
+.roundImage{
+    border-radius: 64px;
+    border-style: solid;
+    border-color: #000000;
+}
+
+
+@font-face {
+    font-family: Syncopate;
+    src: url(Fonts/Syncopate-Regular.ttf);
+}
+
+@font-face {
+    font-family: Gruppo;
+    src: url(Fonts/Gruppo-Regular.ttf);
+}
